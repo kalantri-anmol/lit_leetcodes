@@ -16,9 +16,9 @@ TreeNode *build(vector<int> preorder, vector<int>inorder, int preStart, int PreE
 
 	root->left = build(preorder,inorder, preStart+1, preStart+(k-inStart), inStart, k-1);
 	root->right = build(preorder,inorder, preStart+(k-inStart)+1,preEnd, k+1, inEnd);
-												 // ---------	
-												// 		^
-												// stuff on the left in inIndex;
+						      // ---------	
+					    	// 		^
+						// stuff on the left in inIndex;
 	return root;
 }
 
